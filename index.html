@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="styles.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <script src="app.js" defer></script>
+    <title>Challenge</title>
+    
+</head>
+<body>
+    <header>
+        <img class="logo" src="Imagenes/Logo.png" alt="Logo">
+    </header>
+    <section class="container-box">
+        
+        <article class="box-1">
+            <textarea id="texto" class="input-text" rows="4" cols="50" placeholder="Ingrese el texto aqui">Ingrese el texto aqui</textarea>
+            <div class="botones">
+                <p><img src="Imagenes/bi--exclamation-circle-fill.svg" alt="exclamacion"> Solo letras minusculas y sin acentos</p> 
+                <button onclick="encriptar();" class="container__boton_encriptar">Encriptar</button>
+                <button onclick="desencriptar();" class="container__boton_desencriptar">Desencriptar</button>
+            </div>
+        </article>
+
+        <article class="box-2">
+            <picture class="p-muñeco"><img  class="muñeco" src="Imagenes/Muñeco.png" alt="Muñeco"></picture>
+            <div class="conteiner-texto-box-2">
+                <h2 class="titulo-box-2">Ningún mensaje fue encontrado</h5>
+                <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+            </div>
+        </article>
+       
+     </section>
+     <footer class="end">Made by Luisby</footer> 
+     
+</body>
+
+
+</html>
