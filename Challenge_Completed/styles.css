@@ -1,0 +1,300 @@
+* {
+  box-sizing: border-box;
+  font-family: "Inter", serif;
+}
+
+body {
+  
+  position: relative;
+  background-color: #F3F5FC;
+  margin: 0;
+  min-height: 100vh;
+}
+
+
+
+.logo{
+  margin-top: 2rem;
+}
+
+
+.title {
+  margin-top: 30px;
+}
+
+.container-box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+
+
+
+
+  margin-left: 350px;
+  width: 90%;
+  margin: 0 auto;
+ 
+}
+
+
+/*--------------- Las dos cajas de contenido ---------------*/
+.box-1{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 5px;
+  
+  width: 720px;
+  order: 1;
+  
+  
+ 
+}
+.box-2{
+  display: flex;
+  margin: 5px;
+  
+  width: 400px;
+  order: 2;
+  background-color: white;
+  /*border: 3px solid black;*/
+  border-radius: 32px;
+  box-shadow: 0px 24px 32px -8px #00000014;
+ 
+
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: center;
+}
+
+
+
+/*------------------------------Control de BOX 1------------------------------*/
+.input-text{
+
+  border: none;
+  padding-bottom: 400px;
+  margin: 20px;
+  margin-top: 50px;
+  margin-bottom: 75px;
+  resize: none; /* Evita el cambio de tamaño */
+  width: 680px; /* Ancho del textarea */
+ 
+}
+.box-1 textarea{
+  outline: none;
+  background-color: #F3F5FC;
+  text-decoration-color: #0A3871;
+  font-size: 32px;
+  
+}
+
+.botones{
+  
+  width: 700px;
+  margin-left: 20px;
+  gap: 10px 
+}
+.botones button{
+  height: 67px;
+  padding: 24px;
+  width: 328px;
+  
+  border: 1px solid rgba(10, 56, 113, 1) ;
+  border-radius: 24px;
+  cursor: pointer;
+  gap: 8px;
+
+}
+.container__boton_encriptar{
+  background-color: #0a3871;
+  color: #ffffff;
+}
+.container__boton_desencriptar{
+  margin-left: 2.8%;
+  background-color: #D8DFE8;
+  color: #0A3871;
+}
+.botones p{ 
+  line-height: 18px;
+  font-size: 12px;
+  color: #495057;
+  margin: 5px 15px;
+}
+/*---------------------------------------------------------------------------*/
+
+
+
+/*------------------------------Control de BOX 2------------------------------*/
+
+/*Imagen de muñeco*/
+.p-muñeco{
+  display: flex;
+  align-items: end;
+}
+
+
+/* texto antes (p,h2) y despues (text-area)*/
+.conteiner-texto-box-2{
+  width: 336px;
+}
+
+.conteiner-texto-box-2-post{
+ 
+  display: flex;
+  flex-direction: column;
+   
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 336px;
+}
+
+.box-2 textarea{
+
+ 
+  outline: none;
+  height: 100%;
+  margin-top: 20px;
+  border: none;
+  resize: none;
+  font-size: 24px;
+  color:#495057;
+  text-align: initial;
+  order: 1;
+}
+
+
+/* Botton de copiar*/
+.box-2 button{
+
+  
+
+  margin-top: 20px;
+  height: 67px;
+  line-height: 19px;
+  padding: 24px;
+  width: 328px;
+  font-size: 16px;
+  border: 1px solid rgba(10, 56, 113, 1) ;
+  border-radius: 24px;
+  cursor: pointer;
+  gap: 8px;
+  background-color: white;
+  color: #0A3871;
+  order: 2;
+}
+
+/*---------------------------------------------------------------------------*/
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+  color: #ffffff;
+  background-color: #356EA9;
+  
+}
+
+
+/*-------------------- Responsive 900 -------------------------------*/
+
+@media (max-width: 900px) {
+
+  footer{
+    position: relative;
+  }
+
+.container-box {
+    flex-direction: row;
+    align-items: center;
+}
+.botones, .box-2 button {
+   
+  margin: 1rem auto;
+  transition-duration: 500ms;
+}
+.box-1 textarea {
+  width: 680px;
+  height: 60vh;
+}
+
+.box-1{
+  width: 100%;
+}
+.box-2{
+  width: 100%;
+}
+
+.box-2 textarea{
+  width: 400px;
+  height: 64vh;
+}
+
+.botones p {
+  justify-content: start;
+  width: 100%;
+}
+.container__boton_encriptar, .container__boton_desencriptar {
+  width: 325px;
+  margin: 0;
+  transition-duration: 300ms;
+}
+.p-muñeco{
+  display: none;
+  
+}
+.logo {
+  display: inline;
+  margin-top: 4rem;
+}
+}
+
+
+
+/*-------------------- Responsive 768 -------------------------------*/
+
+
+
+@media (max-width: 768px){
+.container-box {
+    padding: 10px;
+}
+
+
+.botones, .box-2 button {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.box-2 textarea {
+   width: 100%;
+}
+
+.box-2{
+  height: auto;
+  justify-content: center;
+}
+
+
+.box-2 button {
+    width: 90%;
+    transition-duration: 300ms;
+}
+
+
+.botones p {
+    display: flex;
+    justify-content: center;
+}
+
+
+.container__boton_encriptar, .container__boton_desencriptar{
+    width: 360px;
+    transition-duration: 300ms;
+}
+}
